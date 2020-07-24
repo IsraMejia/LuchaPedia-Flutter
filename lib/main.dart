@@ -6,7 +6,7 @@ class MyApp extends StatelessWidget {
   @override
 
   String urlKemonito ="https://imagenes.milenio.com/bphSgOtpXqNAf5Zn_9i1QK3v2fs=/958x596/smart/https://www.milenio.com/uploads/media/2020/03/24/kemonito-santiago-chaparro_0_9_958_596.jpeg" ;
-  String bioK ="KeMonito (3 de julio de 1967) es un mánager de lucha libre profesional y luchador profesional mexicano, quien actualmente trabaja para la empresa Consejo Mundial de Lucha Libre (CMLL).";
+  String bioK ="KeMonito nacio el 3 de julio de 1967 es un icono de la lucha libre profesional mexicano, actualmente trabaja para la empresa Consejo Mundial de Lucha Libre (CMLL).";
 
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -23,16 +23,36 @@ class MyApp extends StatelessWidget {
           backgroundColor: Colors.purpleAccent[700] ,
          
         ),
-        body: Column(
-          mainAxisAlignment: MainAxisAlignment.start,
-          crossAxisAlignment: CrossAxisAlignment.start ,
+        body: Stack(
           children: <Widget>[
+          // Container(color: Colors.blueAccent[700]),
+          Container(
+            decoration: BoxDecoration(
+              gradient: LinearGradient(
+                begin: Alignment(0.0, 0.0),
+                end: Alignment(0.6, 0.99),
+                colors: [
+                  Colors.purpleAccent[700],
+                  Colors.deepPurpleAccent[400] ,
+                ], 
+              ),
+            ),
+          ),
 
-            luchadorBio(),
-            Container(height: 20,),
-            Text("Hola"),
 
-          ],
+          Column(
+            mainAxisAlignment: MainAxisAlignment.start,
+            crossAxisAlignment: CrossAxisAlignment.start ,
+            children: <Widget>[
+
+              luchadorBio(),
+              Container(height: 30,),
+              Center(child: Text("Mas Luchadores", style: TextStyle(fontSize: 25, color: Color.fromRGBO(220, 229, 227, 0.9)),)
+              ),
+
+            ],
+          ),
+          ]
         )
         
       ),
@@ -71,7 +91,7 @@ class MyApp extends StatelessWidget {
                 width: 320.0,
                 height: 150.0 ,
                 decoration: BoxDecoration(
-                  color: Colors.indigo[100] ,
+                  color: Colors.indigo[700] ,
                   borderRadius: BorderRadius.circular(10.0)
                 ),
                 child: Column(
@@ -80,10 +100,13 @@ class MyApp extends StatelessWidget {
                   children: <Widget>[
                     //  ListTile(title: Text('hola'),)
                     Text('Kemonito:' , 
-                      style: TextStyle(fontSize: 28, color: Colors.yellow[50] ),
+                      style: TextStyle(fontSize: 28, color: Colors.yellow[200] ),
                     ),
-                    Text(bioK , 
-                      style: TextStyle(fontSize: 17, color: Colors.blueAccent[400] ),
+                    Container(
+                      margin: EdgeInsets.only(left: 5),
+                      child: Text(bioK , 
+                        style: TextStyle(fontSize: 16.3, color: Colors.yellow[50] ),
+                      ),
                     ),
                   ],
                 ),
