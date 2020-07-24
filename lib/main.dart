@@ -20,17 +20,19 @@ class MyApp extends StatelessWidget {
          
         ),
         body: Column(
-          crossAxisAlignment: CrossAxisAlignment.end,
           mainAxisAlignment: MainAxisAlignment.start,
-          
+          crossAxisAlignment: CrossAxisAlignment.center ,
           children: <Widget>[
-            Center(child: Text("Hola")), 
-            Text("Hola"), 
-            Text("Hola"), 
-            Text("Hola"), 
-            Text("Saluditos"), 
-            Text("Hola"), 
-            Text("Hola"), 
+
+            Center(
+              child: Container(
+                height: 300.0 ,
+                width: 300.0,
+                decoration: BoxDecoration(
+                  color: Colors.blueGrey[100]
+                ),
+              ),
+            ),
             Text("Hola"),
 
           ],
@@ -38,5 +40,5 @@ class MyApp extends StatelessWidget {
         
       ),
     );
-  }
-}
+  }//build
+}//MyApp
