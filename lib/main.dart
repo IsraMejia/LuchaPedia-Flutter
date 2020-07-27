@@ -173,25 +173,7 @@ class MyApp extends StatelessWidget {
        child: ListView(
           scrollDirection: Axis.horizontal,
           children: <Widget>[
-            Container(
-              margin: EdgeInsets.all(5.0),
-              width: 100,
-              // decoration: BoxDecoration(
-              // color: Colors.greenAccent ,
-              // borderRadius: BorderRadius.circular(10.0)
-              // ),
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                crossAxisAlignment: CrossAxisAlignment.center,
-                children: <Widget>[
-                  Container(
-                    height: 90,
-                    child: Image.asset("assets/Luchadores/elSanto.jpg", ),
-                  ),
-                  Text("El Santo", style: TextStyle(fontSize: 15, color: Colors.white),)
-                ],
-              ),
-            ),
+            
 
             Container(
               margin: EdgeInsets.all(5.0),
@@ -205,44 +187,101 @@ class MyApp extends StatelessWidget {
                )
               ),
               child: Container(
-                margin: EdgeInsets.only(top: 85, left: 5),
-                child: Text("El Santo", style: TextStyle(fontSize: 20, color: Colors.white),)
+                margin: EdgeInsets.only(top: 85, left: 2),
+                child: Text("El Santo", style: TextStyle( fontSize: 18, color: Colors.white, fontWeight: FontWeight.bold  ),)
               ),
             ),
 
-            Container(
-              margin: EdgeInsets.all(5.0),
-              width: 100,
-              decoration: BoxDecoration(
-              color: Colors.indigo[400] ,
-              borderRadius: BorderRadius.circular(10.0)
-              ),
-              child: Stack(
-                children: <Widget>[
-                  
-                ],
-              ),
-            ),
-
-            Container(
-              margin: EdgeInsets.all(5.0),
-              width: 100,
-              decoration: BoxDecoration(
-              color: Colors.redAccent ,
-              borderRadius: BorderRadius.circular(10.0)
-              ),
-            ),
-
-            Container(
-              margin: EdgeInsets.all(5.0),
-              width: 100,
-              decoration: BoxDecoration(
-              color: Colors.teal[200] ,
-              borderRadius: BorderRadius.circular(10.0)
-              ),
-            ),
             
 
+            Container(
+              margin: EdgeInsets.all(5.0),
+              width: 100,
+              decoration: BoxDecoration(
+              //color: Colors.yellow ,
+              borderRadius: BorderRadius.circular(10.0),
+              image: DecorationImage(
+                image: AssetImage("assets/Luchadores/blueDemon.jpg" ),
+                fit: BoxFit.cover
+               )
+              ),
+              child: Container(
+                margin: EdgeInsets.only(top: 85, left: 2),
+                child: Text("BlueDemon", style: TextStyle(fontSize: 18, color: Colors.white, fontWeight: FontWeight.bold ),)
+              ),
+            ),
+
+            Container(
+              margin: EdgeInsets.all(5.0),
+              width: 100,
+              decoration: BoxDecoration(
+              //color: Colors.yellow ,
+              borderRadius: BorderRadius.circular(10.0),
+              image: DecorationImage(
+                image: AssetImage("assets/Luchadores/historico.jpg" ),
+                fit: BoxFit.cover
+               )
+              ),
+              child: Container(
+                margin: EdgeInsets.only(top: 85, left: 2),
+                child: Text("Historico", style: TextStyle(fontSize: 18, color: Colors.white, fontWeight: FontWeight.bold ),)
+              ),
+            ),
+
+
+
+            Container(
+              margin: EdgeInsets.all(5.0),
+              width: 100,
+              decoration: BoxDecoration(
+              //color: Colors.yellow ,
+              borderRadius: BorderRadius.circular(10.0),
+              image: DecorationImage(
+                image: AssetImage("assets/Luchadores/tiniebla.png" ),
+                fit: BoxFit.cover
+               )
+              ),
+              child: Container(
+                margin: EdgeInsets.only(top: 85, left: 2),
+                child: Text("Tinieblas", style: TextStyle(fontSize: 18, color: Colors.white, fontWeight: FontWeight.bold ),)
+              ),
+            ),
+
+
+
+            Container(
+              margin: EdgeInsets.all(5.0),
+              width: 100,
+              decoration: BoxDecoration(
+              //color: Colors.yellow ,
+              borderRadius: BorderRadius.circular(10.0),
+              image: DecorationImage(
+                image: AssetImage("assets/Luchadores/reyMisterio.png" ),
+                fit: BoxFit.cover
+               )
+              ),
+              child: Container(
+                margin: EdgeInsets.only(top: 65, left: 2),
+                child: Text("Rey Misterioo", style: TextStyle(fontSize: 18, color: Colors.white, fontWeight: FontWeight.bold ),)
+              ),
+            ),
+
+            Container(
+              margin: EdgeInsets.all(5.0),
+              width: 100,
+              decoration: BoxDecoration(
+              //color: Colors.yellow ,
+              borderRadius: BorderRadius.circular(10.0),
+              image: DecorationImage(
+                image: AssetImage("assets/Luchadores/frijolito.jpg" ),
+                fit: BoxFit.cover
+               )
+              ),
+              child: Container(
+                margin: EdgeInsets.only(top: 85, left: 2),
+                child: Text("Frijolito", style: TextStyle(fontSize: 18, color: Colors.white, fontWeight: FontWeight.bold ),)
+              ),
+            ),
 
 
           ],

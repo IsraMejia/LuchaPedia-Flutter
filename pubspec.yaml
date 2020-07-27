@@ -42,7 +42,12 @@ flutter:
 
   # To add assets to your application, add an assets section, like this:
   assets:
-   - assets/Luchadores/
+   - assets/Luchadores/blueDemon.jpg 
+   - assets/Luchadores/elSanto.jpg
+   - assets/Luchadores/frijolito.jpg
+   - assets/Luchadores/historico.jpg
+   - assets/Luchadores/reyMisterio.png
+   - assets/Luchadores/tiniebla.png
   #  - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
