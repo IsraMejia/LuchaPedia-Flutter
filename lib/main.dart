@@ -48,12 +48,12 @@ class MyApp extends StatelessWidget {
 
               luchadorBio(),
 
-              Container(height: 10),
+              Container(height: 4),
 
               Center( 
                 child: Text(
                   "Mas Luchadores", 
-                  style: TextStyle(fontSize: 25, color: Color.fromRGBO(220, 229, 227, 0.9)),
+                  style: TextStyle(fontSize: 29, color: Color.fromRGBO(220, 229, 227, 0.9)),
                 )
               ),
 
@@ -96,10 +96,10 @@ class MyApp extends StatelessWidget {
 
             
             Positioned(
-              top: 170,
-              left: 20,
+              top: 155,
+              left: 10,
               child: Container(
-                width: 320.0,
+                width: 330.0,
                 height: 210.0 ,
                 decoration: BoxDecoration(
                   color: Colors.indigo[700] ,
@@ -116,7 +116,7 @@ class MyApp extends StatelessWidget {
                     Container(
                       margin: EdgeInsets.only(left: 5),
                       child: Text(bioK , 
-                        style: TextStyle(fontSize: 16.3, color: Colors.yellow[50] ),
+                        style: TextStyle(fontSize: 16, color: Colors.yellow[50] ),
                       ),
                     ),
 
