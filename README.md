@@ -1,16 +1,11 @@
 # luchapedia
 
-A new Flutter project.
+LuchaPedia es un ejemplo de interfaz de usuario practico hecha en Flutter :)
 
-## Getting Started
+Consiste en una wiki sencilla en la de los luchadores Mexicanos mas iconicos de la historia
+y el desarrollo de esa interfaz usa los siguientes widgets basicos de flutter:
 
-This project is a starting point for a Flutter application.
+Scaffold, Appbar, Column, Row, ListView, Container, Box Decoration, Text, Icon, Image, entre otros.
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+La idea de este repositorio es compartir ejemplos basicos de como usar los wigets basicos
+y con algo de practica mas gente aprenda a usar flutter y crear sus propias aplicaciones :D
