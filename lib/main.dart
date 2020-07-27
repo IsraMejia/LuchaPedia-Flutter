@@ -48,7 +48,7 @@ class MyApp extends StatelessWidget {
 
               luchadorBio(),
 
-              Container(height: 30,),
+              Container(height: 10),
 
               Center( 
                 child: Text(
@@ -57,7 +57,9 @@ class MyApp extends StatelessWidget {
                 )
               ),
 
-               listaLuchadores(),
+              listaLuchadores(),
+
+              Expanded(child: Container())
 
             ],
           ),
@@ -162,20 +164,71 @@ class MyApp extends StatelessWidget {
     return  Center(
       child: Container(
       margin: EdgeInsets.only(top: 10),
-      height: 130, 
+      height: 120, 
       width: 380 ,
-      decoration: BoxDecoration(
-        color: Colors.green ,
-        borderRadius: BorderRadius.circular(10.0)
-      ),
+      // decoration: BoxDecoration(
+      //   color: Colors.green ,
+      //   borderRadius: BorderRadius.circular(10.0)
+      // ),
        child: ListView(
           scrollDirection: Axis.horizontal,
           children: <Widget>[
             Container(
               margin: EdgeInsets.all(5.0),
               width: 100,
+              // decoration: BoxDecoration(
+              // color: Colors.greenAccent ,
+              // borderRadius: BorderRadius.circular(10.0)
+              // ),
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                crossAxisAlignment: CrossAxisAlignment.center,
+                children: <Widget>[
+                  Container(
+                    height: 90,
+                    child: Image.asset("assets/Luchadores/elSanto.jpg", ),
+                  ),
+                  Text("El Santo", style: TextStyle(fontSize: 15, color: Colors.white),)
+                ],
+              ),
+            ),
+
+            Container(
+              margin: EdgeInsets.all(5.0),
+              width: 100,
               decoration: BoxDecoration(
-              color: Colors.indigo[50] ,
+              //color: Colors.yellow ,
+              borderRadius: BorderRadius.circular(10.0),
+              image: DecorationImage(
+                image: AssetImage("assets/Luchadores/elSanto.jpg" ),
+                fit: BoxFit.cover
+               )
+              ),
+              child: Container(
+                margin: EdgeInsets.only(top: 85, left: 5),
+                child: Text("El Santo", style: TextStyle(fontSize: 20, color: Colors.white),)
+              ),
+            ),
+
+            Container(
+              margin: EdgeInsets.all(5.0),
+              width: 100,
+              decoration: BoxDecoration(
+              color: Colors.indigo[400] ,
+              borderRadius: BorderRadius.circular(10.0)
+              ),
+              child: Stack(
+                children: <Widget>[
+                  
+                ],
+              ),
+            ),
+
+            Container(
+              margin: EdgeInsets.all(5.0),
+              width: 100,
+              decoration: BoxDecoration(
+              color: Colors.redAccent ,
               borderRadius: BorderRadius.circular(10.0)
               ),
             ),
@@ -184,34 +237,7 @@ class MyApp extends StatelessWidget {
               margin: EdgeInsets.all(5.0),
               width: 100,
               decoration: BoxDecoration(
-              color: Colors.indigo[50] ,
-              borderRadius: BorderRadius.circular(10.0)
-              ),
-            ),
-
-            Container(
-              margin: EdgeInsets.all(5.0),
-              width: 100,
-              decoration: BoxDecoration(
-              color: Colors.indigo[50] ,
-              borderRadius: BorderRadius.circular(10.0)
-              ),
-            ),
-
-            Container(
-              margin: EdgeInsets.all(5.0),
-              width: 100,
-              decoration: BoxDecoration(
-              color: Colors.indigo[50] ,
-              borderRadius: BorderRadius.circular(10.0)
-              ),
-            ),
-
-            Container(
-              margin: EdgeInsets.all(5.0),
-              width: 100,
-              decoration: BoxDecoration(
-              color: Colors.indigo[50] ,
+              color: Colors.teal[200] ,
               borderRadius: BorderRadius.circular(10.0)
               ),
             ),
