@@ -84,10 +84,15 @@ class BioFigther extends StatelessWidget {
               top: 5,
               child: ClipRRect(
                 borderRadius: BorderRadius.circular(20.0),
-                child: Image(
-                  width: 350.0,
-                  image: NetworkImage(urlKemonito),
+                child: FadeInImage.assetNetwork(
+                  placeholder: 'assets/Gifs/loading.gif' ,
+                   image: urlKemonito,
+                   width: 350.0,
                 ),
+                // Image(
+                //   width: 350.0,
+                //   image: NetworkImage(urlKemonito),
+                // ),
               ),
             ),
 

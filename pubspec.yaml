@@ -49,6 +49,8 @@ flutter:
    - assets/Luchadores/masLuchadores.png
    - assets/Luchadores/reyMisterio.png
    - assets/Luchadores/tiniebla.png
+
+   - assets/Gifs/loading.gif
   #  - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
