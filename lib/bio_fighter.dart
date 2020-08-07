@@ -3,9 +3,9 @@ import 'package:luchapedia/all_figthers.dart';
 
 class BioFigther extends StatelessWidget {
   
-  final String urlKemonito ="https://imagenes.milenio.com/bphSgOtpXqNAf5Zn_9i1QK3v2fs=/958x596/smart/https://www.milenio.com/uploads/media/2020/03/24/kemonito-santiago-chaparro_0_9_958_596.jpeg" ;
   final String bioK ="KeMonito nacio el 3 de julio de 1967 es un icono de la lucha libre profesional mexicano, actualmente trabaja para la empresa Consejo Mundial de Lucha Libre (CMLL).";
-  
+  final String urlKemonito ="https://imagenes.milenio.com/bphSgOtpXqNAf5Zn_9i1QK3v2fs=/958x596/smart/https://www.milenio.com/uploads/media/2020/03/24/kemonito-santiago-chaparro_0_9_958_596.jpeg" ;
+
   @override
   Widget build(BuildContext context) {
     return 
@@ -176,6 +176,7 @@ class BioFigther extends StatelessWidget {
        child: ListView(
           scrollDirection: Axis.horizontal,
           children: <Widget>[
+
             
 
             Container(
@@ -195,7 +196,23 @@ class BioFigther extends StatelessWidget {
               ),
             ),
 
-            
+
+            Container(
+              margin: EdgeInsets.all(5.0),
+              width: 100,
+              decoration: BoxDecoration(
+              //color: Colors.yellow ,
+              borderRadius: BorderRadius.circular(10.0),
+              image: DecorationImage(
+                image: AssetImage("assets/Luchadores/Angelica.png" ),
+                fit: BoxFit.cover
+               )
+              ),
+              child: Container(
+                margin: EdgeInsets.only(top: 85, left: 2),
+                child: Text("Angelica", style: TextStyle(fontSize: 18, color: Colors.green[50], fontWeight: FontWeight.bold ),)
+              ),
+            ),
 
             Container(
               margin: EdgeInsets.all(5.0),
@@ -214,6 +231,25 @@ class BioFigther extends StatelessWidget {
               ),
             ),
 
+            
+            Container(
+              margin: EdgeInsets.all(5.0),
+              width: 100,
+              decoration: BoxDecoration(
+              //color: Colors.yellow ,
+              borderRadius: BorderRadius.circular(10.0),
+              image: DecorationImage(
+                image: AssetImage("assets/Luchadores/ladyShani.png" ),
+                fit: BoxFit.cover
+               )
+              ),
+              child: Container(
+                margin: EdgeInsets.only(top: 85, left: 2),
+                child: Text("LadyShani", style: TextStyle(fontSize: 18, color: Colors.green[50], fontWeight: FontWeight.bold ),)
+              ),
+            ),
+            
+
             Container(
               margin: EdgeInsets.all(5.0),
               width: 100,
@@ -231,8 +267,7 @@ class BioFigther extends StatelessWidget {
               ),
             ),
 
-
-
+            
             Container(
               margin: EdgeInsets.all(5.0),
               width: 100,
@@ -240,32 +275,13 @@ class BioFigther extends StatelessWidget {
               //color: Colors.yellow ,
               borderRadius: BorderRadius.circular(10.0),
               image: DecorationImage(
-                image: AssetImage("assets/Luchadores/tiniebla.png" ),
-                fit: BoxFit.cover
-               )
-              ),
-              child: Container(
-                margin: EdgeInsets.only(top: 85, left: 2),
-                child: Text("Tinieblas", style: TextStyle(fontSize: 18, color: Colors.white, fontWeight: FontWeight.bold ),)
-              ),
-            ),
-
-
-
-            Container(
-              margin: EdgeInsets.all(5.0),
-              width: 100,
-              decoration: BoxDecoration(
-              //color: Colors.yellow ,
-              borderRadius: BorderRadius.circular(10.0),
-              image: DecorationImage(
-                image: AssetImage("assets/Luchadores/reyMisterio.png" ),
+                image: AssetImage("assets/Luchadores/diosaQuetzal.png" ),
                 fit: BoxFit.cover
                )
               ),
               child: Container(
                 margin: EdgeInsets.only(top: 65, left: 2),
-                child: Text("Rey Misterioo", style: TextStyle(fontSize: 18, color: Colors.white, fontWeight: FontWeight.bold ),)
+                child: Text("Diosa Quetzal", style: TextStyle(fontSize: 18, color: Colors.white, fontWeight: FontWeight.bold ),)
               ),
             ),
 
@@ -306,7 +322,7 @@ class BioFigther extends StatelessWidget {
                         size: 80,
                       ), 
                       onPressed: (){
-                        print('presionado');
+                        print('Mas Luchadores ->');
                         Navigator.push( context,  MaterialPageRoute(
                           builder:  (BuildContext context) => AllFighters (),
                           ),

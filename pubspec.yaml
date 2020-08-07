@@ -42,13 +42,14 @@ flutter:
 
   # To add assets to your application, add an assets section, like this:
   assets:
+   - assets/Luchadores/Angelica.png 
    - assets/Luchadores/blueDemon.jpg 
+   - assets/Luchadores/diosaQuetzal.png 
    - assets/Luchadores/elSanto.jpg
    - assets/Luchadores/frijolito.jpg
    - assets/Luchadores/historico.jpg
+   - assets/Luchadores/ladyShani.png
    - assets/Luchadores/masLuchadores.png
-   - assets/Luchadores/reyMisterio.png
-   - assets/Luchadores/tiniebla.png
 
    - assets/Gifs/loading.gif
   #  - images/a_dot_ham.jpeg
