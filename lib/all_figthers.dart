@@ -26,22 +26,73 @@ class AllFighters extends StatelessWidget {
             ),
           ),
 
-          
-
-
-          Column(
-            mainAxisAlignment: MainAxisAlignment.spaceAround ,
-            crossAxisAlignment: CrossAxisAlignment.center ,
-            children: <Widget>[
-              Text('Mas Luchadoresasdasdasdasdasdasdasdasdas', style: TextStyle(fontSize: 30)),
-              Container(color: Colors.green, height: 100, width: 100,)
-            ]
-          ),
+          _figthersTable()          
 
         ]
       )
 
 
     );
+  }//build 
+
+  Widget _figthersTable(){
+    return  Table(
+      children:  [
+        TableRow( 
+          children:[
+            Container( width: 100, height: 100,
+              color: Colors.blue,
+              margin: EdgeInsets.all(10),
+            ),
+            Container( width: 100, height: 100,
+              color: Colors.red,
+              margin: EdgeInsets.all(10),
+            ),
+            Container( width: 100, height: 100,
+              color: Colors.green,
+              margin: EdgeInsets.all(10),
+            ),
+          ]
+       ),
+
+       TableRow( 
+         children:[
+         Container( width: 100, height: 120,
+           color: Colors.yellow,
+           margin: EdgeInsets.all(10),
+         ),
+         Container( width: 100, height: 100,
+           color: Colors.indigoAccent,
+           margin: EdgeInsets.all(10),
+         ),
+         Container( width: 10, height: 70,
+           color: Colors.lightGreenAccent,
+           margin: EdgeInsets.all(10),
+         ),
+         ]
+       ),
+
+       TableRow( 
+        children:[
+         Container( width: 100, height: 90,
+           color: Colors.blueGrey[100] ,
+           margin: EdgeInsets.all(10),
+         ),
+         Container( width: 100, height: 80,
+           color: Colors.greenAccent,
+           margin: EdgeInsets.all(10),
+         ),
+         Container( width: 10, height: 100,
+           color: Colors.brown[100],
+           margin: EdgeInsets.all(10) ,
+         ),
+        ]
+       ),
+
+      ],
+    );
+          //Table
   }
-}
+
+
+}//Class AllFighters
