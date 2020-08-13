@@ -8,61 +8,124 @@ class BioFigther extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return 
-      Scaffold(
-        appBar: AppBar(
-          leading: Icon(Icons.directions_walk, size: 40.0),
-          title: Text(
-            'Luchapedia Weeb xd',
-            style: TextStyle(fontSize: 30),
-          ),
-          backgroundColor: Colors.purpleAccent[700] ,
-         
-        ),
-        body: Stack(
-          children: <Widget>[
-          // Container(color: Colors.blueAccent[700]),
-          Container(
-            decoration: BoxDecoration( 
-              gradient: LinearGradient(
-                begin: Alignment(0.0, 0.0),
-                end: Alignment(0.6, 0.99),
-                colors: [
-                  Colors.purpleAccent[700],
-                  Colors.deepPurpleAccent[400] ,
-                ], 
+    
+    return LayoutBuilder(
+      builder: (context, constraints){
+        if(constraints.maxWidth < 600){
+          return Scaffold(
+            appBar: AppBar(
+              leading: Icon(Icons.directions_walk, size: 40.0),
+              title: Text(
+                'Luchapedia Web :)',
+                style: TextStyle(fontSize: 30),
               ),
+              backgroundColor: Colors.purpleAccent[700] ,
+            
             ),
-          ),
-
-
-          Column(
-            mainAxisAlignment: MainAxisAlignment.start,
-            crossAxisAlignment: CrossAxisAlignment.start ,
-            children: <Widget>[
-
-              luchadorBio(),
-
-              Container(height: 4),
-
-              Center( 
-                child: Text(
-                  "Mas Luchadores", 
-                  style: TextStyle(fontSize: 29, color: Color.fromRGBO(220, 229, 227, 0.9)),
-                )
+            body: Stack(
+              children: <Widget>[
+              // Container(color: Colors.blueAccent[700]),
+              Container(
+                decoration: BoxDecoration( 
+                  gradient: LinearGradient(
+                    begin: Alignment(0.0, 0.0),
+                    end: Alignment(0.6, 0.99),
+                    colors: [
+                      Colors.purpleAccent[700],
+                      Colors.deepPurpleAccent[400] ,
+                    ], 
+                  ),
+                ),
               ),
 
-              listaLuchadores(context ),
 
-              Expanded(child: Container())
+              Column(
+                mainAxisAlignment: MainAxisAlignment.start,
+                crossAxisAlignment: CrossAxisAlignment.start ,
+                children: <Widget>[
 
-            ],
-          ),
-          ]
-        )
-        
-      );
-      //Scaffold
+                  luchadorBio(),
+
+                  Container(height: 4),
+
+                  Center( 
+                    child: Text(
+                      "Mas Luchadores", 
+                      style: TextStyle(fontSize: 29, color: Color.fromRGBO(220, 229, 227, 0.9)),
+                    )
+                  ),
+
+                  listaLuchadores(context ),
+
+                  Expanded(child: Container())
+
+                ],
+              ),
+              ]
+            )
+            
+          );
+        //Scaffold BioFigther moviles
+        }else{
+          return Scaffold(
+            
+            appBar: AppBar(
+              title: Text('Ancho de  ${constraints.maxWidth}'),
+            ),
+            body: Row(
+              children: [
+                Expanded(
+                  child: Container(
+
+                    color: Colors.indigo,
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.spaceAround,
+                      children: [
+                        Text('Pantalla bioFigthers', 
+                          style: TextStyle(fontSize: 50, color: Colors.white ),
+                        ),
+                        Text('La mitad es = ${(constraints.maxWidth) / 2}', 
+                          style: TextStyle(fontSize: 50, color: Colors.white ),
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
+                
+                Expanded(
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Container(
+                        color: Colors.green, 
+                        height: constraints.maxHeight/3 , 
+                        width: constraints.maxWidth/2,
+                        child: 
+                          Text('Pantalla Todos los luchadores', 
+                            style: TextStyle(fontSize: 50, color: Colors.white ),
+                          ),
+                      ),
+                      Container(
+                        color: Colors.blue, 
+                        height: constraints.maxHeight/3 , 
+                      ),
+                      Expanded(
+                          child: Container(
+                          color: Colors.yellow, 
+                          // height: constraints.maxHeight/4 , 
+                          //A este se le da menos altura porque el appBar igual consume
+                        ),
+                      ),
+                    ],
+                  )
+                )
+              ],
+            )
+          );
+          //Scaffold2 LayoutBuilder 
+        }
+      }
+    );
 
   }//build
 

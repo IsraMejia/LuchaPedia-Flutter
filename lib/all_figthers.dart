@@ -47,6 +47,10 @@ class AllFighters extends StatelessWidget {
 
 
     );
+    //Scaffold original LuchaPedia
+
+    
+
   }//build 
 
   Widget _figthersTable(){
