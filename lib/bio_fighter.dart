@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/rendering.dart';
 import 'package:luchapedia/all_figthers.dart';
 
 class BioFigther extends StatelessWidget {
   
   final String bioK ="KeMonito nacio el 3 de julio de 1967 es un icono de la lucha libre profesional mexicano, actualmente trabaja para la empresa Consejo Mundial de Lucha Libre (CMLL).";
+  final String bioKweb ="KeMonito nacio el 3 de julio de 1967 es un icono de la lucha libre profesional mexicano, actualmente trabaja para la empresa Consejo Mundial de Lucha Libre (CMLL).\n\nAntes de ser KeMonito fue conocido como Alushe (1984-2003), cabe destacar haber participado bajo este nombre en el programa de televisión Odisea de Burbujas, Supervacaciones y las Aventuras de Chapulina.\n\nDe igual forma lucho bajo el nombre del Duende Maya. Como dato curioso tomo el título de Khemonito en el 2003, el cual lo sigue portando hasta la actualidad.";
   final String urlKemonito ="https://imagenes.milenio.com/bphSgOtpXqNAf5Zn_9i1QK3v2fs=/958x596/smart/https://www.milenio.com/uploads/media/2020/03/24/kemonito-santiago-chaparro_0_9_958_596.jpeg" ;
 
   @override
@@ -11,7 +13,7 @@ class BioFigther extends StatelessWidget {
     
     return LayoutBuilder(
       builder: (context, constraints){
-        if(constraints.maxWidth < 600){
+        if(constraints.maxWidth < 720){
           return Scaffold(
             appBar: AppBar(
               leading: Icon(Icons.directions_walk, size: 40.0),
@@ -74,7 +76,7 @@ class BioFigther extends StatelessWidget {
             appBar: AppBar(
               leading: Icon(Icons.directions_walk, size: 40.0),
               title: Text(
-                'Luchapedia Web :)',
+                'Luchapedia Web :) ${constraints.maxWidth}',
                 style: TextStyle(fontSize: 30),
               ),
               backgroundColor: Colors.purpleAccent[700] ,
@@ -99,29 +101,7 @@ class BioFigther extends StatelessWidget {
                       ),
                     ),
 
-
-                    Column(
-                      mainAxisAlignment: MainAxisAlignment.start,
-                      crossAxisAlignment: CrossAxisAlignment.start ,
-                      children: <Widget>[
-
-                        luchadorBio(),
-
-                        Container(height: 4),
-
-                        Center( 
-                          child: Text(
-                            "Mas Luchadores", 
-                            style: TextStyle(fontSize: 29, color: Color.fromRGBO(220, 229, 227, 0.9)),
-                          )
-                        ),
-
-                        listaLuchadores(context ),
-
-                        Expanded(child: Container())
-
-                      ],
-                    ),
+                      luchadorBioWeb( constraints),
                     ]
                   )
                   //stack biofigthers
@@ -439,6 +419,81 @@ class BioFigther extends StatelessWidget {
   }
 
 
+  Widget luchadorBioWeb( BoxConstraints constraints){
+    return Stack(
+      children: <Widget>[
+
+          Positioned(
+          top: 60,
+          left: constraints.maxWidth *0.05,
+          child: ClipRRect(
+            borderRadius: BorderRadius.circular(20.0),
+            child: FadeInImage.assetNetwork(
+              placeholder: 'assets/Gifs/loading.gif' ,
+               image: urlKemonito,
+               width: (constraints.maxWidth < 1200) ? 430 : constraints.maxWidth * 0.4,
+               //430, <- el width normal antes de que sea mas responsivo
+            ),
+          ),
+        ),
+
+        
+        Positioned(
+          top: (constraints.maxWidth < 1200) ? 245 : constraints.maxWidth * 0.2,
+          //245,<- el top normal antes de que sea mas responsivo
+          left: constraints.maxWidth *0.07,
+          child: Container(
+            width: (constraints.maxWidth < 1200) ? 380 : constraints.maxWidth * 0.37,
+            // 380.0, <- el width normal antes de que sea mas responsivo
+            height: constraints.maxHeight * 0.55,
+            //510.0 ,<- el height normal antes de que sea mas responsivo
+            decoration: BoxDecoration(
+              color: Colors.indigo[700] ,
+              borderRadius: BorderRadius.circular(10.0)
+            ),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.center,
+              mainAxisAlignment: MainAxisAlignment.spaceAround ,
+              children: <Widget>[
+                //  ListTile(title: Text('hola'),)
+                Text('Kemonito:' , 
+                  style: TextStyle(fontSize: 38, color: Colors.yellow[200] ),
+                ),
+                Container(
+                  margin: EdgeInsets.only(left: 5),
+                  child: Text(bioKweb , 
+                    style: TextStyle(
+                      fontSize: (constraints.maxWidth < 1200) ? 15 : 19,
+                      color: Colors.yellow[50] 
+                    ),
+                  ),
+                ),
+
+                Container(
+                  width: 118,
+                  child: FlatButton(
+                    color: Colors.pink[400] ,
+                    shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(30.0)),
+                    onPressed: (){}, 
+                    child: Row(
+                      children: <Widget>[
+                        Text('Me gusta'),
+                        Icon(Icons.favorite_border)
+                      ],
+                    ),
+                  ),
+                )
+
+              ],
+            ),
+          )
+        )
+        
+      ],
+    );
+  }
+
+  
 
 
 }//BioFighter
