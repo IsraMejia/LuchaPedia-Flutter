@@ -7,5 +7,7 @@ y el desarrollo de esa interfaz usa los siguientes widgets basicos de flutter:
 
 Scaffold, Appbar, Column, Row, ListView, Container, Box Decoration, Text, Icon, Image, entre otros.
 
+Por ultimo se agregara #Migracion a #Web de la app LuchaPedia :)
+
 La idea de este repositorio es compartir ejemplos basicos de como usar los wigets basicos
 y con algo de practica mas gente aprenda a usar flutter y crear sus propias aplicaciones :D
