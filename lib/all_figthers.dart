@@ -222,7 +222,7 @@ class AllFighters extends StatelessWidget {
 
                   Positioned(
                     top: 70,
-                    child: Text("Mascara \nSagrada", 
+                    child: Text("Mascara \nSagradaa", 
                      style: TextStyle(
                       fontSize: 18, color: Colors.indigo[50] , 
                       fontWeight: FontWeight.bold ),

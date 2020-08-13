@@ -13,7 +13,7 @@ class BioFigther extends StatelessWidget {
         appBar: AppBar(
           leading: Icon(Icons.directions_walk, size: 40.0),
           title: Text(
-            'Luchapedia',
+            'Luchapedia Weeb xd',
             style: TextStyle(fontSize: 30),
           ),
           backgroundColor: Colors.purpleAccent[700] ,
