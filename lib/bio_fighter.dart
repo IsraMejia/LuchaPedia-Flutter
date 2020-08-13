@@ -22,7 +22,8 @@ class BioFigther extends StatelessWidget {
               backgroundColor: Colors.purpleAccent[700] ,
             
             ),
-            body: Stack(
+            body: 
+             Stack(
               children: <Widget>[
               // Container(color: Colors.blueAccent[700]),
               Container(
@@ -63,6 +64,7 @@ class BioFigther extends StatelessWidget {
               ),
               ]
             )
+            //stack biofigthers
             
           );
         //Scaffold BioFigther moviles
@@ -70,26 +72,59 @@ class BioFigther extends StatelessWidget {
           return Scaffold(
             
             appBar: AppBar(
-              title: Text('Ancho de  ${constraints.maxWidth}'),
+              leading: Icon(Icons.directions_walk, size: 40.0),
+              title: Text(
+                'Luchapedia Web :)',
+                style: TextStyle(fontSize: 30),
+              ),
+              backgroundColor: Colors.purpleAccent[700] ,
+            
             ),
             body: Row(
               children: [
                 Expanded(
-                  child: Container(
+                  child: Stack(
+                    children: <Widget>[
+                    // Container(color: Colors.blueAccent[700]),
+                    Container(
+                      decoration: BoxDecoration( 
+                        gradient: LinearGradient(
+                          begin: Alignment(0.0, 0.0),
+                          end: Alignment(0.6, 0.99),
+                          colors: [
+                            Colors.purpleAccent[700],
+                            Colors.deepPurpleAccent[400] ,
+                          ], 
+                        ),
+                      ),
+                    ),
 
-                    color: Colors.indigo,
-                    child: Column(
-                      mainAxisAlignment: MainAxisAlignment.spaceAround,
-                      children: [
-                        Text('Pantalla bioFigthers', 
-                          style: TextStyle(fontSize: 50, color: Colors.white ),
+
+                    Column(
+                      mainAxisAlignment: MainAxisAlignment.start,
+                      crossAxisAlignment: CrossAxisAlignment.start ,
+                      children: <Widget>[
+
+                        luchadorBio(),
+
+                        Container(height: 4),
+
+                        Center( 
+                          child: Text(
+                            "Mas Luchadores", 
+                            style: TextStyle(fontSize: 29, color: Color.fromRGBO(220, 229, 227, 0.9)),
+                          )
                         ),
-                        Text('La mitad es = ${(constraints.maxWidth) / 2}', 
-                          style: TextStyle(fontSize: 50, color: Colors.white ),
-                        ),
+
+                        listaLuchadores(context ),
+
+                        Expanded(child: Container())
+
                       ],
                     ),
-                  ),
+                    ]
+                  )
+                  //stack biofigthers
                 ),
                 
                 Expanded(
