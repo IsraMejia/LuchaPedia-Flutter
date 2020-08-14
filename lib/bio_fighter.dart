@@ -13,7 +13,7 @@ class BioFigther extends StatelessWidget {
     
     return LayoutBuilder(
       builder: (context, constraints){
-        if(constraints.maxWidth < 720){
+        if(constraints.maxWidth < 811){
           return Scaffold(
             appBar: AppBar(
               leading: Icon(Icons.directions_walk, size: 40.0),
@@ -47,9 +47,11 @@ class BioFigther extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start ,
                 children: <Widget>[
 
+                  Expanded(child: Container()),
+
                   luchadorBio(),
 
-                  Container(height: 4),
+                  Expanded(child: Container()),
 
                   Center( 
                     child: Text(
@@ -92,7 +94,7 @@ class BioFigther extends StatelessWidget {
                       decoration: BoxDecoration( 
                         gradient: LinearGradient(
                           begin: Alignment(0.0, 0.0),
-                          end: Alignment(0.6, 0.99),
+                          end: Alignment(0.0, 0.5),
                           colors: [
                             Colors.purpleAccent[700],
                             Colors.deepPurpleAccent[400] ,
@@ -108,33 +110,25 @@ class BioFigther extends StatelessWidget {
                 ),
                 
                 Expanded(
-                  child: Column(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      /*
-                      Container(
-                        color: Colors.green, 
-                        height: constraints.maxHeight/3 , 
-                        width: constraints.maxWidth/2,
-                        child: 
-                          Text('Pantalla Todos los luchadores', 
-                            style: TextStyle(fontSize: 50, color: Colors.white ),
-                          ),
-                      ),
-                      Container(
-                        color: Colors.blue, 
-                        height: constraints.maxHeight/3 , 
-                      ),
-                      Expanded(
-                          child: Container(
-                          color: Colors.yellow, 
-                          // height: constraints.maxHeight/4 , 
-                          //A este se le da menos altura porque el appBar igual consume
+                  child: Stack(
+                  children: [
+
+                    Container(
+                      decoration: BoxDecoration( 
+                        gradient: LinearGradient(
+                          begin: Alignment(0.0, 0.0),
+                          end: Alignment(0.0, 0.5),
+                          colors: [
+                            Colors.purpleAccent[700],
+                            Colors.deepPurpleAccent[400] ,
+                          ], 
                         ),
                       ),
-                      */
-                      AllFighters().figthersTable()
-                    ],
+                    ),
+
+                    AllFighters().figthersTable()
+                  ],
+                    
                   )
                 )
               ],
@@ -466,14 +460,14 @@ class BioFigther extends StatelessWidget {
                   margin: EdgeInsets.only(left: 5),
                   child: Text(bioKweb , 
                     style: TextStyle(
-                      fontSize: (constraints.maxWidth < 1200) ? 15 : 19,
+                      fontSize: (constraints.maxWidth < 1230) ? 15 : 17,
                       color: Colors.yellow[50] 
                     ),
                   ),
                 ),
 
                 Container(
-                  width: 118,
+                  width: 120,
                   child: FlatButton(
                     color: Colors.pink[400] ,
                     shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(30.0)),

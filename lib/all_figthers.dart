@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 class AllFighters extends StatelessWidget {
 
   final String urlHeroina = "https://i.pinimg.com/736x/c4/be/49/c4be4936ebc7e2bc808b805f887a1634.jpg";
-  final String urlAlushe ="https://cdn.eldeforma.com/wp-content/uploads/2019/08/alushe-kemonito.jpg";
+  final String urlMistico ="https://www.yucatan.com.mx/wp-content/uploads/2019/06/carismas.jpg?width=1200&enable=upscale";
   final String urlLaHiedra = "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSTScgaEjlD7IFqNG7jK3eTKzz98bQbIjzGSg&usqp=CAU";
   final String urlParca ="https://imagenes.milenio.com/bznicQhVaurqVaL73PbyaeQGFAA=/958x596/https://www.milenio.com/uploads/media/2019/10/21/parka-hospitalizado-sufrir-impactante-caida_114_61_723_450.jpg" ;
   final String urlPrincesaAzul ="https://pbs.twimg.com/media/EMwiE6mUUAA_tkk.jpg";
@@ -56,12 +56,43 @@ class AllFighters extends StatelessWidget {
   Widget figthersTable(){
     return  Table(
       children:  [
+
+        TableRow(
+          children: [
+            Container(
+              margin: EdgeInsets.only(left: 30, right: 30),
+              width: 70, height: 100,
+              color: Colors.blue,
+              // decoration: BoxDecoration(
+              //   borderRadius: BorderRadius.circular(10.0),
+              // ),
+            ),
+            Center(
+              child: Container(
+                width: 50, height: 100,
+                color: Colors.red,
+              ),
+            ),
+            Center(
+              child: Container(
+                width: 50, height: 100,
+                color: Colors.yellow,
+              ),
+            )
+          ]
+        ),
+
+
+
         TableRow( 
           children:[
             
             Container( width: 110, height: 115,
               // color: Colors.red,
-              margin: EdgeInsets.all(10),
+              margin: EdgeInsets.only(left: 30, right: 50),
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(10.0),
+              ),
               child: ClipRRect(
                 borderRadius: BorderRadius.circular(10.0),
                 child: Stack(
@@ -72,7 +103,7 @@ class AllFighters extends StatelessWidget {
                    image: urlHeroina ,
                    height: 115,
                    width: 115,
-                   fit: BoxFit.cover ,
+                   fit: BoxFit.fill,
                   ),
 
                   Positioned(
@@ -88,7 +119,7 @@ class AllFighters extends StatelessWidget {
               ),
             ),
 
-            Container( width: 110, height: 115,
+            Container( width: 50,
               // color: Colors.red,
               margin: EdgeInsets.all(10),
               child: ClipRRect(
@@ -98,14 +129,15 @@ class AllFighters extends StatelessWidget {
                      
                   FadeInImage.assetNetwork(
                   placeholder: 'assets/Gifs/loading.gif' ,
-                   image: urlAlushe ,
-                   height: 120,
-                   fit: BoxFit.fitHeight ,
+                   image: urlMistico ,
+                   height: 115,
+                   width: 110,
+                   fit: BoxFit.fill ,
                   ),
 
                   Positioned(
                     top: 90,
-                    child: Text("Alushe", 
+                    child: Text("Mistico", 
                      style: TextStyle(
                       fontSize: 18, color: Colors.white, 
                       fontWeight: FontWeight.bold ),
@@ -127,8 +159,8 @@ class AllFighters extends StatelessWidget {
                   FadeInImage.assetNetwork(
                   placeholder: 'assets/Gifs/loading.gif' ,
                    image: urlLaHiedra ,
-                   height: 120,
-                   width: 115,
+                   height: 115,
+                   width: 110,
                    fit: BoxFit.fitHeight ,
                   ),
 
