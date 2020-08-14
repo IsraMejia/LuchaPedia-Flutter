@@ -111,6 +111,7 @@ class BioFigther extends StatelessWidget {
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
+                      /*
                       Container(
                         color: Colors.green, 
                         height: constraints.maxHeight/3 , 
@@ -131,6 +132,8 @@ class BioFigther extends StatelessWidget {
                           //A este se le da menos altura porque el appBar igual consume
                         ),
                       ),
+                      */
+                      AllFighters().figthersTable()
                     ],
                   )
                 )

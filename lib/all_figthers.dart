@@ -40,7 +40,7 @@ class AllFighters extends StatelessWidget {
             ),
           ),
 
-          _figthersTable()          
+          figthersTable()          
 
         ]
       )
@@ -53,7 +53,7 @@ class AllFighters extends StatelessWidget {
 
   }//build 
 
-  Widget _figthersTable(){
+  Widget figthersTable(){
     return  Table(
       children:  [
         TableRow( 
@@ -70,7 +70,7 @@ class AllFighters extends StatelessWidget {
                   FadeInImage.assetNetwork(
                   placeholder: 'assets/Gifs/loading.gif' ,
                    image: urlHeroina ,
-                   height: 120,
+                   height: 115,
                    width: 115,
                    fit: BoxFit.cover ,
                   ),
