@@ -60,218 +60,369 @@ class AllFighters extends StatelessWidget {
         TableRow(
           children: [
             Container(
-              margin: EdgeInsets.only(left: 30, right: 30),
-              width: 70, height: 100,
+              margin: EdgeInsets.all(20),
+              // width: 60, //Solo se ocupa antes de poner el child y ver su tamaño
+              // height: 120,
               color: Colors.blue,
-              // decoration: BoxDecoration(
-              //   borderRadius: BorderRadius.circular(10.0),
-              // ),
+              child: Center(
+                child: ClipRRect(
+                  borderRadius: BorderRadius.circular(10.0),
+                  child: 
+                    Container(
+                      width: 110,
+                      height: 120,
+                      child: Stack(
+                      children: <Widget>[
+                          
+                        FadeInImage.assetNetwork(
+                        placeholder: 'assets/Gifs/loading.gif' ,
+                        image: urlHeroina ,
+                        width: 120, //Para que cubra el ancho 
+                        height: 140, //Para que cubra el ancho 
+                        fit: BoxFit.cover ,
+                        ),
+
+                        Positioned(
+                          top: 90,
+                          child: Text("Heroina", 
+                          style: TextStyle(
+                            fontSize: 18, color: Colors.yellow[50], 
+                            fontWeight: FontWeight.bold ),
+                          )
+                        )
+                      ],
+                      ),
+                    ),
+                ),
+              )//Recorta todo lo quede fuera del contenedor
             ),
-            Center(
-              child: Container(
-                width: 50, height: 100,
-                color: Colors.red,
-              ),
+            //Luchador 1
+
+            Container(
+              margin: EdgeInsets.all(20),
+              // width: 60, //Solo se ocupa antes de poner el child y ver su tamaño
+              // height: 120,
+              color: Colors.blue,
+              child: Center(
+                child: ClipRRect(
+                  borderRadius: BorderRadius.circular(10.0),
+                  child: 
+                    Container(
+                      width: 110,
+                      height: 120,
+                      child: Stack(
+                      children: <Widget>[
+                          
+                        FadeInImage.assetNetwork(
+                        placeholder: 'assets/Gifs/loading.gif' ,
+                        image: urlMistico ,
+                        width: 120, //Para que cubra el ancho 
+                        height: 140, //Para que cubra el ancho 
+                        fit: BoxFit.cover ,
+                        ),
+
+                        Positioned(
+                          top: 90,
+                          child: Text("Mistico", 
+                          style: TextStyle(
+                            fontSize: 18, color: Colors.yellow[50], 
+                            fontWeight: FontWeight.bold ),
+                          )
+                        )
+                      ],
+                      ),
+                    ),
+                ),
+              )//Recorta todo lo quede fuera del contenedor
             ),
-            Center(
-              child: Container(
-                width: 50, height: 100,
-                color: Colors.yellow,
-              ),
-            )
+            //Luchador 2
+
+            Container(
+              margin: EdgeInsets.all(20),
+              // width: 60, //Solo se ocupa antes de poner el child y ver su tamaño
+              // height: 120,
+              color: Colors.blue,
+              child: Center(
+                child: ClipRRect(
+                  borderRadius: BorderRadius.circular(10.0),
+                  child: 
+                    Container(
+                      width: 110,
+                      height: 120,
+                      child: Stack(
+                      children: <Widget>[
+                          
+                        FadeInImage.assetNetwork(
+                        placeholder: 'assets/Gifs/loading.gif' ,
+                        image: urlLaHiedra ,
+                        width: 120, //Para que cubra el ancho 
+                        height: 140, //Para que cubra el ancho 
+                        fit: BoxFit.cover ,
+                        ),
+
+                        Positioned(
+                          top: 90,
+                          child: Text("La Hiedra", 
+                          style: TextStyle(
+                            fontSize: 18, color: Colors.yellow[50], 
+                            fontWeight: FontWeight.bold ),
+                          )
+                        )
+                      ],
+                      ),
+                    ),
+                ),
+              )//Recorta todo lo quede fuera del contenedor
+            ),
+            //Luchador 3
           ]
         ),
+        //tableRow 1
 
+         TableRow(
+          children: [
+            Container(
+              margin: EdgeInsets.all(20),
+              // width: 60, //Solo se ocupa antes de poner el child y ver su tamaño
+              // height: 120,
+              color: Colors.blue,
+              child: Center(
+                child: ClipRRect(
+                  borderRadius: BorderRadius.circular(10.0),
+                  child: 
+                    Container(
+                      width: 110,
+                      height: 120,
+                      child: Stack(
+                      children: <Widget>[
+                          
+                        FadeInImage.assetNetwork(
+                        placeholder: 'assets/Gifs/loading.gif' ,
+                        image: urlParca ,
+                        width: 120, //Para que cubra el ancho 
+                        height: 140, //Para que cubra el ancho 
+                        fit: BoxFit.cover ,
+                        ),
 
-
-        TableRow( 
-          children:[
-            
-            Container( width: 110, height: 115,
-              // color: Colors.red,
-              margin: EdgeInsets.only(left: 30, right: 50),
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(10.0),
-              ),
-              child: ClipRRect(
-                borderRadius: BorderRadius.circular(10.0),
-                child: Stack(
-                 children: <Widget>[
-                     
-                  FadeInImage.assetNetwork(
-                  placeholder: 'assets/Gifs/loading.gif' ,
-                   image: urlHeroina ,
-                   height: 115,
-                   width: 115,
-                   fit: BoxFit.fill,
-                  ),
-
-                  Positioned(
-                    top: 90,
-                    child: Text("Heroina", 
-                     style: TextStyle(
-                      fontSize: 18, color: Colors.yellow[50], 
-                      fontWeight: FontWeight.bold ),
-                    )
-                  )
-                 ],
-                ) 
-              ),
+                        Positioned(
+                          top: 90,
+                          child: Text("La Parca", 
+                          style: TextStyle(
+                            fontSize: 18, color: Colors.yellow[50], 
+                            fontWeight: FontWeight.bold ),
+                          )
+                        )
+                      ],
+                      ),
+                    ),
+                ),
+              )//Recorta todo lo quede fuera del contenedor
             ),
+            //Luchador 1
 
-            Container( width: 50,
-              // color: Colors.red,
-              margin: EdgeInsets.all(10),
-              child: ClipRRect(
-                borderRadius: BorderRadius.circular(10.0),
-                child: Stack(
-                 children: <Widget>[
-                     
-                  FadeInImage.assetNetwork(
-                  placeholder: 'assets/Gifs/loading.gif' ,
-                   image: urlMistico ,
-                   height: 115,
-                   width: 110,
-                   fit: BoxFit.fill ,
-                  ),
+            Container(
+              margin: EdgeInsets.all(20),
+              // width: 60, //Solo se ocupa antes de poner el child y ver su tamaño
+              // height: 120,
+              // color: Colors.blue,
+              child: Center(
+                child: ClipRRect(
+                  borderRadius: BorderRadius.circular(10.0),
+                  child: 
+                    Container(
+                      width: 110,
+                      height: 120,
+                      child: Stack(
+                      children: <Widget>[
+                          
+                        FadeInImage.assetNetwork(
+                        placeholder: 'assets/Gifs/loading.gif' ,
+                        image: urlPrincesaAzul ,
+                        width: 120, //Para que cubra el ancho 
+                        height: 140, //Para que cubra el ancho 
+                        fit: BoxFit.cover ,
+                        ),
 
-                  Positioned(
-                    top: 90,
-                    child: Text("Mistico", 
-                     style: TextStyle(
-                      fontSize: 18, color: Colors.white, 
-                      fontWeight: FontWeight.bold ),
-                    )
-                  )
-                 ],
-                ) 
-              ),
+                        Positioned(
+                          top: 70,
+                          child: Text("Princesa \nAzul", 
+                          style: TextStyle(
+                            fontSize: 18, color: Colors.yellow[50], 
+                            fontWeight: FontWeight.bold ),
+                          )
+                        )
+                      ],
+                      ),
+                    ),
+                ),
+              )//Recorta todo lo quede fuera del contenedor
             ),
+            //Luchador 2
 
-             Container( width: 110, height: 115,
-              // color: Colors.red,
-              margin: EdgeInsets.all(10),
-              child: ClipRRect(
-                borderRadius: BorderRadius.circular(10.0),
-                child: Stack(
-                 children: <Widget>[
-                     
-                  FadeInImage.assetNetwork(
-                  placeholder: 'assets/Gifs/loading.gif' ,
-                   image: urlLaHiedra ,
-                   height: 115,
-                   width: 110,
-                   fit: BoxFit.fitHeight ,
-                  ),
+            Container(
+              margin: EdgeInsets.all(20),
+              // width: 60, //Solo se ocupa antes de poner el child y ver su tamaño
+              // height: 120,
+              color: Colors.blue,
+              child: Center(
+                child: ClipRRect(
+                  borderRadius: BorderRadius.circular(10.0),
+                  child: 
+                    Container(
+                      width: 110,
+                      height: 120,
+                      child: Stack(
+                      children: <Widget>[
+                          
+                        FadeInImage.assetNetwork(
+                        placeholder: 'assets/Gifs/loading.gif' ,
+                        image: urlMascaraSagrada ,
+                        width: 120, //Para que cubra el ancho 
+                        height: 140, //Para que cubra el ancho 
+                        fit: BoxFit.cover ,
+                        ),
 
-                  Positioned(
-                    top: 90,
-                    child: Text("La Hiedra", 
-                     style: TextStyle(
-                      fontSize: 18, color: Colors.white, 
-                      fontWeight: FontWeight.bold ),
-                    )
-                  )
-                 ],
-                ) 
-              ),
+                        Positioned(
+                          top: 70,
+                          child: Text("Mascara \nSagradaa", 
+                          style: TextStyle(
+                            fontSize: 18, color: Colors.yellow[50], 
+                            fontWeight: FontWeight.bold ),
+                          )
+                        )
+                      ],
+                      ),
+                    ),
+                ),
+              )//Recorta todo lo quede fuera del contenedor
             ),
+            //Luchador 3
           ]
-       ),
-       
-       TableRow(
-         children: [
-           Container( width: 110, height: 115,
-              // color: Colors.red,
-              margin: EdgeInsets.all(10),
-              child: ClipRRect(
-                borderRadius: BorderRadius.circular(10.0),
-                child: Stack(
-                 children: <Widget>[
-                     
-                  FadeInImage.assetNetwork(
-                  placeholder: 'assets/Gifs/loading.gif' ,
-                   image: urlParca ,
-                   height: 120,
-                   width: 115,
-                   fit: BoxFit.fitHeight ,
-                  ),
+        ),
+        //tableRow 2
 
-                  Positioned(
-                    top: 90,
-                    child: Text("La Parca", 
-                     style: TextStyle(
-                      fontSize: 18, color: Colors.white, 
-                      fontWeight: FontWeight.bold ),
-                    )
-                  )
-                 ],
-                ) 
-              ),
+        TableRow(
+          children: [
+            Container(
+              margin: EdgeInsets.all(20),
+              // width: 60, //Solo se ocupa antes de poner el child y ver su tamaño
+              // height: 120,
+              color: Colors.blue,
+              child: Center(
+                child: ClipRRect(
+                  borderRadius: BorderRadius.circular(10.0),
+                  child: 
+                    Container(
+                      width: 110,
+                      height: 120,
+                      child: Stack(
+                      children: <Widget>[
+                          
+                        FadeInImage.assetNetwork(
+                        placeholder: 'assets/Gifs/loading.gif' ,
+                        image: urlKeira ,
+                        width: 120, //Para que cubra el ancho 
+                        height: 140, //Para que cubra el ancho 
+                        fit: BoxFit.cover ,
+                        ),
+
+                        Positioned(
+                          top: 90,
+                          child: Text("Keira", 
+                          style: TextStyle(
+                            fontSize: 18, color: Colors.yellow[50], 
+                            fontWeight: FontWeight.bold ),
+                          )
+                        )
+                      ],
+                      ),
+                    ),
+                ),
+              )//Recorta todo lo quede fuera del contenedor
             ),
+            //Luchador 1
 
-            Container( width: 110, height: 115,
-              // color: Colors.red,
-              margin: EdgeInsets.all(10),
-              child: ClipRRect(
-                borderRadius: BorderRadius.circular(10.0),
-                child: Stack(
-                 children: <Widget>[
-                     
-                  FadeInImage.assetNetwork(
-                  placeholder: 'assets/Gifs/loading.gif' ,
-                   image: urlPrincesaAzul ,
-                   height: 120,
-                   width: 115,
-                   fit: BoxFit.cover ,
-                  ),
+            Container(
+              margin: EdgeInsets.all(20),
+              // width: 60, //Solo se ocupa antes de poner el child y ver su tamaño
+              // height: 120,
+              color: Colors.blue,
+              child: Center(
+                child: ClipRRect(
+                  borderRadius: BorderRadius.circular(10.0),
+                  child: 
+                    Container(
+                      width: 110,
+                      height: 120,
+                      child: Stack(
+                      children: <Widget>[
+                          
+                        FadeInImage.assetNetwork(
+                        placeholder: 'assets/Gifs/loading.gif' ,
+                        image: urlMistico ,
+                        width: 120, //Para que cubra el ancho 
+                        height: 140, //Para que cubra el ancho 
+                        fit: BoxFit.cover ,
+                        ),
 
-                  Positioned(
-                    top: 70,
-                    child: Text("Princesa \nAzul", 
-                     style: TextStyle(
-                      fontSize: 18, color: Colors.white , 
-                      fontWeight: FontWeight.bold ),
-                    )
-                  )
-                 ],
-                ) 
-              ),
+                        Positioned(
+                          top: 90,
+                          child: Text("Mistico", 
+                          style: TextStyle(
+                            fontSize: 18, color: Colors.yellow[50], 
+                            fontWeight: FontWeight.bold ),
+                          )
+                        )
+                      ],
+                      ),
+                    ),
+                ),
+              )//Recorta todo lo quede fuera del contenedor
             ),
+            //Luchador 2
 
+            Container(
+              margin: EdgeInsets.all(20),
+              // width: 60, //Solo se ocupa antes de poner el child y ver su tamaño
+              // height: 120,
+              color: Colors.blue,
+              child: Center(
+                child: ClipRRect(
+                  borderRadius: BorderRadius.circular(10.0),
+                  child: 
+                    Container(
+                      width: 110,
+                      height: 120,
+                      child: Stack(
+                      children: <Widget>[
+                          
+                        FadeInImage.assetNetwork(
+                        placeholder: 'assets/Gifs/loading.gif' ,
+                        image: urlLaHiedra ,
+                        width: 120, //Para que cubra el ancho 
+                        height: 140, //Para que cubra el ancho 
+                        fit: BoxFit.cover ,
+                        ),
 
-            Container( width: 110, height: 115,
-              // color: Colors.red,
-              margin: EdgeInsets.all(10),
-              child: ClipRRect(
-                borderRadius: BorderRadius.circular(10.0),
-                child: Stack(
-                 children: <Widget>[
-                     
-                  FadeInImage.assetNetwork(
-                  placeholder: 'assets/Gifs/loading.gif' ,
-                   image: urlMascaraSagrada ,
-                   height: 120,
-                   width: 115,
-                   fit: BoxFit.cover ,
-                  ),
-
-                  Positioned(
-                    top: 70,
-                    child: Text("Mascara \nSagradaa", 
-                     style: TextStyle(
-                      fontSize: 18, color: Colors.indigo[50] , 
-                      fontWeight: FontWeight.bold ),
-                    )
-                  )
-                 ],
-                ) 
-              ),
+                        Positioned(
+                          top: 90,
+                          child: Text("La Hiedra", 
+                          style: TextStyle(
+                            fontSize: 18, color: Colors.yellow[50], 
+                            fontWeight: FontWeight.bold ),
+                          )
+                        )
+                      ],
+                      ),
+                    ),
+                ),
+              )//Recorta todo lo quede fuera del contenedor
             ),
+            //Luchador 3
+          ]
+        ),
+        //tableRow 3
 
-         ]
-       ),
-       //tableRow
 
        TableRow(
          children: [
