@@ -13,7 +13,7 @@ class BioFigther extends StatelessWidget {
     
     return LayoutBuilder(
       builder: (context, constraints){
-        if(constraints.maxWidth < 811){
+        if(constraints.maxWidth < 811 /*||  constraints.maxHeight<700*/ ){
           return Scaffold(
             appBar: AppBar(
               leading: Icon(Icons.directions_walk, size: 40.0),
@@ -78,7 +78,7 @@ class BioFigther extends StatelessWidget {
             appBar: AppBar(
               leading: Icon(Icons.directions_walk, size: 40.0),
               title: Text(
-                'Luchapedia Web :) ${constraints.maxWidth}',
+                'Luchapedia Web :) ',
                 style: TextStyle(fontSize: 30),
               ),
               backgroundColor: Colors.purpleAccent[700] ,
@@ -442,7 +442,7 @@ class BioFigther extends StatelessWidget {
           child: Container(
             width: (constraints.maxWidth < 1200) ? 380 : constraints.maxWidth * 0.37,
             // 380.0, <- el width normal antes de que sea mas responsivo
-            height: constraints.maxHeight * 0.55,
+            height: constraints.maxHeight * 0.5,
             //510.0 ,<- el height normal antes de que sea mas responsivo
             decoration: BoxDecoration(
               color: Colors.indigo[700] ,

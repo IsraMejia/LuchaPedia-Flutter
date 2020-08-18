@@ -74,17 +74,17 @@ class AllFighters extends StatelessWidget {
             TableRow(
               children: [
                 Container(
-                  margin: EdgeInsets.all(20),
+                  margin: EdgeInsets.all(10),
                   // width: 60, //Solo se ocupa antes de poner el child y ver su tamaño
-                  // height: 120,
+                  // height: 125,
                   // color: Colors.blue,
                   child: Center(
                     child: ClipRRect(
                       borderRadius: BorderRadius.circular(10.0),
                       child: 
                         Container(
-                          width: 110,
-                          height: 120,
+                          width: 100,
+                          height: 125,
                           child: Stack(
                           children: <Widget>[
                               
@@ -97,7 +97,7 @@ class AllFighters extends StatelessWidget {
                             ),
 
                             Positioned(
-                              top: 90,
+                              top: 105,
                               child: Text("Heroina", 
                               style: TextStyle(
                                 fontSize: 18, color: Colors.yellow[50], 
@@ -113,17 +113,17 @@ class AllFighters extends StatelessWidget {
                 //Luchador 1
 
                 Container(
-                  margin: EdgeInsets.all(20),
+                  margin: EdgeInsets.all(10),
                   // width: 60, //Solo se ocupa antes de poner el child y ver su tamaño
-                  // height: 120,
+                  // height: 125,
                   // color: Colors.blue,
                   child: Center(
                     child: ClipRRect(
                       borderRadius: BorderRadius.circular(10.0),
                       child: 
                         Container(
-                          width: 110,
-                          height: 120,
+                          width: 100,
+                          height: 125,
                           child: Stack(
                           children: <Widget>[
                               
@@ -136,7 +136,7 @@ class AllFighters extends StatelessWidget {
                             ),
 
                             Positioned(
-                              top: 90,
+                              top: 105,
                               child: Text("Mistico", 
                               style: TextStyle(
                                 fontSize: 18, color: Colors.yellow[50], 
@@ -152,17 +152,17 @@ class AllFighters extends StatelessWidget {
                 //Luchador 2
 
                 Container(
-                  margin: EdgeInsets.all(20),
+                  margin: EdgeInsets.all(10),
                   // width: 60, //Solo se ocupa antes de poner el child y ver su tamaño
-                  // height: 120,
+                  // height: 125,
                   // color: Colors.blue,
                   child: Center(
                     child: ClipRRect(
                       borderRadius: BorderRadius.circular(10.0),
                       child: 
                         Container(
-                          width: 110,
-                          height: 120,
+                          width: 100,
+                          height: 125,
                           child: Stack(
                           children: <Widget>[
                               
@@ -175,7 +175,7 @@ class AllFighters extends StatelessWidget {
                             ),
 
                             Positioned(
-                              top: 90,
+                              top: 105,
                               child: Text("La Hiedra", 
                               style: TextStyle(
                                 fontSize: 18, color: Colors.yellow[50], 
@@ -196,17 +196,17 @@ class AllFighters extends StatelessWidget {
              TableRow(
               children: [
                 Container(
-                  margin: EdgeInsets.all(20),
+                  margin: EdgeInsets.all(10),
                   // width: 60, //Solo se ocupa antes de poner el child y ver su tamaño
-                  // height: 120,
+                  // height: 125,
                   // color: Colors.blue,
                   child: Center(
                     child: ClipRRect(
                       borderRadius: BorderRadius.circular(10.0),
                       child: 
                         Container(
-                          width: 110,
-                          height: 120,
+                          width: 100,
+                          height: 125,
                           child: Stack(
                           children: <Widget>[
                               
@@ -219,7 +219,7 @@ class AllFighters extends StatelessWidget {
                             ),
 
                             Positioned(
-                              top: 90,
+                              top: 105,
                               child: Text("La Parca", 
                               style: TextStyle(
                                 fontSize: 18, color: Colors.yellow[100], 
@@ -235,17 +235,17 @@ class AllFighters extends StatelessWidget {
                 //Luchador 1
 
                 Container(
-                  margin: EdgeInsets.all(20),
+                  margin: EdgeInsets.all(10),
                   // width: 60, //Solo se ocupa antes de poner el child y ver su tamaño
-                  // height: 120,
+                  // height: 125,
                   // color: Colors.blue,
                   child: Center(
                     child: ClipRRect(
                       borderRadius: BorderRadius.circular(10.0),
                       child: 
                         Container(
-                          width: 110,
-                          height: 120,
+                          width: 100,
+                          height: 125,
                           child: Stack(
                           children: <Widget>[
                               
@@ -258,7 +258,7 @@ class AllFighters extends StatelessWidget {
                             ),
 
                             Positioned(
-                              top: 70,
+                              top: 80,
                               child: Text("Princesa \nAzul", 
                               style: TextStyle(
                                 fontSize: 18, color: Colors.yellow[100], 
@@ -274,17 +274,17 @@ class AllFighters extends StatelessWidget {
                 //Luchador 2
 
                 Container(
-                  margin: EdgeInsets.all(20),
+                  margin: EdgeInsets.all(10),
                   // width: 60, //Solo se ocupa antes de poner el child y ver su tamaño
-                  // height: 120,
+                  // height: 125,
                   // color: Colors.blue,
                   child: Center(
                     child: ClipRRect(
                       borderRadius: BorderRadius.circular(10.0),
                       child: 
                         Container(
-                          width: 110,
-                          height: 120,
+                          width: 100,
+                          height: 125,
                           child: Stack(
                           children: <Widget>[
                               
@@ -297,7 +297,7 @@ class AllFighters extends StatelessWidget {
                             ),
 
                             Positioned(
-                              top: 70,
+                              top: 80,
                               child: Text("Mascara \nSagradaa", 
                               style: TextStyle(
                                 fontSize: 18, color: Colors.yellow[100], 
@@ -318,17 +318,17 @@ class AllFighters extends StatelessWidget {
             TableRow(
               children: [
                 Container(
-                  margin: EdgeInsets.all(20),
+                  margin: EdgeInsets.all(10),
                   // width: 60, //Solo se ocupa antes de poner el child y ver su tamaño
-                  // height: 120,
+                  // height: 125,
                   // color: Colors.blue,
                   child: Center(
                     child: ClipRRect(
                       borderRadius: BorderRadius.circular(10.0),
                       child: 
                         Container(
-                          width: 110,
-                          height: 120,
+                          width: 100,
+                          height: 125,
                           child: Stack(
                           children: <Widget>[
                               
@@ -341,7 +341,7 @@ class AllFighters extends StatelessWidget {
                             ),
 
                             Positioned(
-                              top: 90,
+                              top: 105,
                               child: Text("Keira", 
                               style: TextStyle(
                                 fontSize: 18, color: Colors.yellow[100], 
@@ -357,17 +357,17 @@ class AllFighters extends StatelessWidget {
                 //Luchador 1
 
                 Container(
-                  margin: EdgeInsets.all(20),
+                  margin: EdgeInsets.all(10),
                   // width: 60, //Solo se ocupa antes de poner el child y ver su tamaño
-                  // height: 120,
+                  // height: 125,
                   // color: Colors.blue,
                   child: Center(
                     child: ClipRRect(
                       borderRadius: BorderRadius.circular(10.0),
                       child: 
                         Container(
-                          width: 110,
-                          height: 120,
+                          width: 100,
+                          height: 125,
                           child: Stack(
                           children: <Widget>[
                               
@@ -380,7 +380,7 @@ class AllFighters extends StatelessWidget {
                             ),
 
                             Positioned(
-                              top: 90,
+                              top: 105,
                               child: Text("Dos Caras", 
                               style: TextStyle(
                                 fontSize: 18, color: Colors.yellow[50], 
@@ -396,17 +396,17 @@ class AllFighters extends StatelessWidget {
                 //Luchador 2
 
                 Container(
-                  margin: EdgeInsets.all(20),
+                  margin: EdgeInsets.all(10),
                   // width: 60, //Solo se ocupa antes de poner el child y ver su tamaño
-                  // height: 120,
+                  // height: 125,
                   // color: Colors.blue,
                   child: Center(
                     child: ClipRRect(
                       borderRadius: BorderRadius.circular(10.0),
                       child: 
                         Container(
-                          width: 110,
-                          height: 120,
+                          width: 100,
+                          height: 125,
                           child: Stack(
                           children: <Widget>[
                               
@@ -419,7 +419,7 @@ class AllFighters extends StatelessWidget {
                             ),
 
                             Positioned(
-                              top: 70,
+                              top: 80,
                               child: Text("Lady \nFlammer", 
                               style: TextStyle(
                                 fontSize: 18, color: Colors.yellow[100], 
@@ -440,17 +440,17 @@ class AllFighters extends StatelessWidget {
              TableRow(
               children: [
                 Container(
-                  margin: EdgeInsets.all(20),
+                  margin: EdgeInsets.all(10),
                   // width: 60, //Solo se ocupa antes de poner el child y ver su tamaño
-                  // height: 120,
+                  // height: 125,
                   // color: Colors.blue,
                   child: Center(
                     child: ClipRRect(
                       borderRadius: BorderRadius.circular(10.0),
                       child: 
                         Container(
-                          width: 110,
-                          height: 120,
+                          width: 100,
+                          height: 125,
                           child: Stack(
                           children: <Widget>[
                               
@@ -463,7 +463,7 @@ class AllFighters extends StatelessWidget {
                             ),
 
                             Positioned(
-                              top: 90,
+                              top: 105,
                               child: Text("Octagon", 
                               style: TextStyle(
                                 fontSize: 18, color: Colors.yellow[50], 
@@ -479,17 +479,17 @@ class AllFighters extends StatelessWidget {
                 //Luchador 1
 
                 Container(
-                  margin: EdgeInsets.all(20),
+                  margin: EdgeInsets.all(10),
                   // width: 60, //Solo se ocupa antes de poner el child y ver su tamaño
-                  // height: 120,
+                  // height: 125,
                   // color: Colors.blue,
                   child: Center(
                     child: ClipRRect(
                       borderRadius: BorderRadius.circular(10.0),
                       child: 
                         Container(
-                          width: 110,
-                          height: 120,
+                          width: 100,
+                          height: 125,
                           child: Stack(
                           children: <Widget>[
                               
@@ -502,7 +502,7 @@ class AllFighters extends StatelessWidget {
                             ),
 
                             Positioned(
-                              top: 90,
+                              top: 105,
                               child: Text("Baronessa", 
                               style: TextStyle(
                                 fontSize: 18, color: Colors.yellow[50], 
@@ -518,17 +518,17 @@ class AllFighters extends StatelessWidget {
                 //Luchador 2
 
                 Container(
-                  margin: EdgeInsets.all(20),
+                  margin: EdgeInsets.all(10),
                   // width: 60, //Solo se ocupa antes de poner el child y ver su tamaño
-                  // height: 120,
+                  // height: 125,
                   // color: Colors.blue,
                   child: Center(
                     child: ClipRRect(
                       borderRadius: BorderRadius.circular(10.0),
                       child: 
                         Container(
-                          width: 110,
-                          height: 120,
+                          width: 100,
+                          height: 125,
                           child: Stack(
                           children: <Widget>[
                               
@@ -541,7 +541,7 @@ class AllFighters extends StatelessWidget {
                             ),
 
                             Positioned(
-                              top: 90,
+                              top: 105,
                               child: Text("Atlantis", 
                               style: TextStyle(
                                 fontSize: 18, color: Colors.yellow[100], 
